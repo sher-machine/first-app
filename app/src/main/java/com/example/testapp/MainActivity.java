@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        btn3.setOnClickListener(                 //обработчик событий
+        btn3.setOnClickListener(                 //обработчик событий ВЫХОД ИЗ ПРИЛОЖЕНИЯ
                 new View.OnClickListener() {     //новое действие при нажатии на кнопку
                     @Override
                     public void onClick(View v) {
