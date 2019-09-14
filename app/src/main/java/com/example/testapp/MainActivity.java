@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.view.View;
@@ -16,7 +17,7 @@ import static android.widget.Toast.LENGTH_LONG;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn, btn2, btn3;         //тип данных для кнопки
+    private Button btn, btn2, btn3, act_change;         //тип данных для кнопки
     private EditText pass;
 
     @Override
@@ -31,6 +32,18 @@ public class MainActivity extends AppCompatActivity {
         btn = (Button)findViewById(R.id.but1);
         btn2= (Button)findViewById(R.id.other_button);
         btn3= (Button)findViewById(R.id.alert);
+        act_change=(Button)findViewById(R.id.act_change);
+
+        act_change.setOnClickListener(                 //обработчик событий
+                new View.OnClickListener(){     //новое действие при нажатии на кнопку
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent= new Intent(".SecondActivity");           //класс для перехода да другую страницу
+                        startActivity(intent);
+                    }
+                }
+        );
+
 
         btn.setOnClickListener(                 //обработчик событий
                 new View.OnClickListener(){     //новое действие при нажатии на кнопку
@@ -39,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                         btn.setText("DONE");                     //Установка текста после нажатия
                         btn.setBackgroundTintList(ColorStateList.valueOf(Color.BLUE));     //
                         Toast.makeText(                // метод создания всплывающего окна
-                                MainActivity.this, pass.getText(), LENGTH_LONG
+                                MainActivity.this, pass.getText(), Toast.LENGTH_SHORT
                         ).show();                   // метод, который покажет всплвающее окно
                     }
                 }

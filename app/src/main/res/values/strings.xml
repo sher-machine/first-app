@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Test app</string>
     <string name="title_activity_second">SecondActivity</string>
+    <string name="title_activity_second2">SecondActivity2</string>
 </resources>
