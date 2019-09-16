@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent intent= new Intent(".SecondActivity");           //класс для перехода да другую страницу
-                        startActivity(intent);
+                        startActivity(intent);      //запуск
                     }
                 }
         );
