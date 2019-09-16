@@ -17,20 +17,10 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="@color/colorBlue"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>
-
-    <include layout="@layout/content_second" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -44,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="45sp"
-            app:srcCompat="@drawable/padlock_PNG9406" />
+            app:srcCompat="@drawable/padlock" />
 
         <TextView
             android:id="@+id/textView"
@@ -52,41 +42,55 @@
             android:layout_height="wrap_content"
             android:fontFamily="monospace"
             android:text="Autorization"
-            android:padding="15sp"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="@color/colorGrey"
             android:textSize="33sp" />
+
 
         <EditText
             android:id="@+id/editText4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40sp"
+            android:layout_marginTop="20sp"
             android:layout_marginRight="40sp"
-            android:background="@color/colorWhite"
+            android:background="@drawable/fields"
             android:ems="10"
             android:hint="email"
             android:inputType="textEmailAddress"
+            android:padding="20sp"
             android:paddingBottom="40sp"
-            android:textColor="#00BCD4" />
-
+            android:textColor="@color/colorBlue"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/editText5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="40sp"
+            android:background="@drawable/fields"
             android:ems="10"
-            android:inputType="textPassword" />
+            android:fontFamily="monospace"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:padding="20sp"
+            android:paddingBottom="40sp"
+            android:textColor="@color/colorBlue"
+            android:textSize="24sp" />/>
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="120sp"
-            android:layout_marginRight="120sp"
-            android:text="Button"
-            android:textSize="24sp" />
+            android:layout_marginLeft="100sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="100sp"
+            android:background="@drawable/button"
+            android:text="GO"
+            android:textSize="30sp" />
     </LinearLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
