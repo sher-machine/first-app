@@ -23,7 +23,7 @@ public class ThirdActivity extends AppCompatActivity {
     }
 
     public void list(){
-        list = (ListView)findViewById(R.id.ListView);
+        list = findViewById(R.id.ListView);
         ArrayAdapter <String> adapter = new ArrayAdapter<String>(this, R.layout.names,names);
         list.setAdapter(adapter);
         list.setOnItemClickListener(
