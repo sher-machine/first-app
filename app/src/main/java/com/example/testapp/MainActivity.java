@@ -17,7 +17,7 @@ import static android.widget.Toast.LENGTH_LONG;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn, btn2, btn3, act_change;         //тип данных для кнопки
+    private Button btn, btn2, btn3, act_change, act_change2;         //тип данных для кнопки
     private EditText pass;
 
     @Override
@@ -33,12 +33,23 @@ public class MainActivity extends AppCompatActivity {
         btn2= (Button)findViewById(R.id.other_button);
         btn3= (Button)findViewById(R.id.alert);
         act_change=(Button)findViewById(R.id.act_change);
+        act_change2=(Button)findViewById(R.id.act_change2);
 
         act_change.setOnClickListener(                 //обработчик событий
                 new View.OnClickListener(){     //новое действие при нажатии на кнопку
                     @Override
                     public void onClick(View v) {
                         Intent intent= new Intent(".SecondActivity");           //класс для перехода да другую страницу
+                        startActivity(intent);      //запуск
+                    }
+                }
+        );
+
+        act_change2.setOnClickListener(                 //обработчик событий
+                new View.OnClickListener(){     //новое действие при нажатии на кнопку
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent= new Intent(".ThirdActivity");           //класс для перехода да другую страницу
                         startActivity(intent);      //запуск
                     }
                 }

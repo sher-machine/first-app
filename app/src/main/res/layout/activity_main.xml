@@ -7,6 +7,7 @@
     android:background="#FFFFFF"
     tools:context=".MainActivity">
 
+
     <Button
         android:id="@+id/other_button"
         android:layout_width="300dp"
@@ -47,8 +48,8 @@
 
     <Button
         android:id="@+id/act_change"
-        android:layout_width="296dp"
-        android:layout_height="91dp"
+        android:layout_width="166dp"
+        android:layout_height="135dp"
         android:layout_marginTop="592dp"
         android:backgroundTint="#4CAF50"
         android:text="open second page"
@@ -56,7 +57,21 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="61dp" />
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/act_change2"
+        android:layout_width="166dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="592dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#BE479D"
+        android:text="open thrid page"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/editText"
