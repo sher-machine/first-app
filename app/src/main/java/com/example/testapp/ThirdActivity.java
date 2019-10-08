@@ -21,6 +21,7 @@ public class ThirdActivity extends AppCompatActivity {
         setContentView(R.layout.activity_third);
         list();
 
+
     }
 
     public void list(){
