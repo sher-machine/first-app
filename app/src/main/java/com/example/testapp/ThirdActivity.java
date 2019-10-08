@@ -25,6 +25,7 @@ public class ThirdActivity extends AppCompatActivity {
 
 
 
+
     public void list(){
         list = findViewById(R.id.ListView);
         ArrayAdapter <String> adapter = new ArrayAdapter<String>(this, R.layout.names,names);
